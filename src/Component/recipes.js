@@ -30,9 +30,9 @@ function Recipes({
         </div>
       )}
 
-      <p>
+    <p>
         <div className="title">Calories: </div>
-        {calories}
+        {parseFloat(calories).toFixed(0)}
       </p>
       <img src={image} alt={title} className="image" />
     </div>
