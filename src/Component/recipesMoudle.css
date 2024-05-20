@@ -1,50 +1,52 @@
-.recipe{
-    border-radius: 10px;
-    box-shadow: 0 5px 20px rgb(71, 71, 71);
-    margin: 30px;
-    padding: 40px;
-display: flex;
-flex-direction: column;
-justify-content: space-around;
-    background-color: white;
-    align-items: center;
-    min-width: 40%;
-
-}
-.image{
-    border-radius: 10%;
-    width: 200px;
-    margin-top: 20px;
+.recipe {
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgb(71, 71, 71);
+  margin: 30px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: white;
+  align-items: center;
+  max-width: 100%;
 }
 
-h1{
-    text-align: center;
+.image {
+  border-radius: 10%;
+  width: 200px;
+  margin-top: 20px;
 }
-ol{
-    /* margin-bottom: 15px; */
-    font-size: 18px;
-    color: #d964b8;;
-}
-p{
-    display: flex;
-    color: #d964b8;
-    align-items: center;
 
+h1 {
+  text-align: center;
 }
-.title{
-    margin-right: 4px;
-    color: #fbc2eb;
-    color:  linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+ol {
+  font-size: 18px;
+  color: #d964b8;
+}
+p {
+  display: flex;
+  color: #d964b8;
+  align-items: center;
+}
+.title {
+  margin-right: 4px;
+  color: #fbc2eb;
+  color: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
 }
 .ingredients {
-    transition: opacity 1s ease; /* تأثير تدريجي للعناصر */
-    opacity: .5; /* بدء مع شفافية 0 */
-  }
-  button{
-    background: lightcoral;
-    border: none;
-    padding: 10px 20px;
-    color: white;
-cursor: pointer;
-
+  transition: opacity 1s ease;
+  opacity: 0.5;
+}
+button {
+  background: lightcoral;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+}
+@media (min-width: 750px) {
+    .recipe {
+        width: 700px;
+    }
   }
