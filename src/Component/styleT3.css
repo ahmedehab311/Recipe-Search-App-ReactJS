@@ -39,9 +39,13 @@ body {
   justify-content: space-around;
   
 }
-
-/* @media (max-width: 870px) {
-.recipes{
-    display: grid;
+@media screen and (min-width: 660px) {
+  .recipes {
+      grid-template-columns: repeat(2, 1fr);
+  }
 }
-} */
+@media screen and (min-width: 992px) {
+  .recipes {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
